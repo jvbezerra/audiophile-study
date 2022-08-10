@@ -18,7 +18,7 @@
   "flex-layout.row#desktop": {
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "verticalAlign": "middle",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
@@ -34,7 +34,7 @@
       "width": "grow",
       "blockClass": "header",
       "horizontalAlign": "center",
-      "verticalAlign": "center"
+      "verticalAlign": "middle"
     },
     "children": ["vtex.menu@2.x:menu"]
   },
@@ -48,6 +48,7 @@
   },
   "flex-layout.row#mobile": {
     "children": [
+      "drawer",
       "flex-layout.col#spacer",
       "minicart.v2"
     ],
@@ -65,6 +66,12 @@
       "horizontalAlign": "center"
     },
     "children": ["flex-layout.col#logo"]
+  },
+  "drawer": {
+    "props": {
+      "isFullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#vertical"]
   },
 
   // GENERAL

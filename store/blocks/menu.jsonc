@@ -7,6 +7,18 @@
       "menu-item#earphones"
     ]
   },
+  "vtex.menu@2.x:menu#vertical": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#home",
+      "menu-item#headphones",
+      "menu-item#speakers",
+      "menu-item#earphones"
+    ]
+  },
+
   "menu-item#home": {
     "props": {
       "id": "menu-item-home",

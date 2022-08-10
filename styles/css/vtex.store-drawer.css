@@ -1,0 +1,9 @@
+.drawer, .openIconContainer, .closeIconContainer {
+  background-color: black;
+}
+
+.openIconContainer, .closeIconButton {
+  display: flex;
+  align-items: center;
+  color: white;
+}
