@@ -1,0 +1,15 @@
+{
+  "minicart.v2": {
+    "props": {
+      "blockClass": "header",
+      "MinicartIcon": "image#minicart-icon"
+    },
+    "children": ["minicart-base-content"]
+  },
+  "image#minicart-icon": {
+    "props": {
+      "src": "assets/icon-cart.svg",
+      "size": 24
+    }
+  }
+}
