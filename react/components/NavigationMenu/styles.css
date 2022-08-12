@@ -1,0 +1,16 @@
+.navigationMenuContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+/** mobile first **/
+@media screen and (min-width: 720px) {
+  .navigationMenuContainer {
+    justify-content: space-between;
+    margin-top: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+}
