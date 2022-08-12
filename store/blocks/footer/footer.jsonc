@@ -23,7 +23,7 @@
       "preventHorizontalStretch": true
     },
     "children": [
-      "logo#desktop-footer",
+      "flex-layout.col#logo-desktop",
       "vtex.menu@2.x:menu"
     ]
   },
@@ -34,7 +34,7 @@
   },
   "flex-layout.row#footer-1-mobile": {
     "children": [
-      "logo#mobile-footer",
+      "flex-layout.col#logo-mobile",
       "vtex.menu@2.x:menu#vertical"
     ]
   },
