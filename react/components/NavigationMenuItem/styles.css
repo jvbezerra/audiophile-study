@@ -1,0 +1,35 @@
+.navigationMenuItemWrapper:not(:first-of-type) {
+  margin-top: 16px;
+}
+
+
+.navigationMenuItemWrapper a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigationMenuItemWrapper a:visited {
+  color: #FFF;
+}
+
+.navigationMenuItemWrapper a:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 720px) {
+  .navigationMenuItemWrapper:not(:last-of-type) {
+    margin-right: 24px;
+  }
+
+  .navigationMenuItemWrapper:not(:first-of-type) {
+    margin-top: 0;
+  }
+
+  .navigationMenuItemWrapper a {
+    font-size: 16px;
+  }
+}
