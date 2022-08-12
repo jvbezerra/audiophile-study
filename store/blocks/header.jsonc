@@ -5,53 +5,41 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+
+  // DESKTOP
   "header-layout.desktop": {
     "children": [
       "sticky-layout#desktop"
     ]
   },
   "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
     "children": ["flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "verticalAlign": "middle",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
+      "flex-layout.col#logo",
+      "flex-layout.col#menu",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
+  "flex-layout.col#menu": {
     "props": {
-      "width": "grow"
-    }
-  },
-  "flex-layout.col#logo-desktop": {
-    "props": {
+      "width": "grow",
+      "blockClass": "header",
+      "horizontalAlign": "center",
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["vtex.menu@2.x:menu"]
   },
-  "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
-    }
-  },
+
+  // MOBILE
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -61,9 +49,7 @@
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
@@ -73,7 +59,35 @@
       "fullWidth": true
     }
   },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow",
+      "blockClass": "header",
+      "horizontalAlign": "center"
+    },
+    "children": ["flex-layout.col#logo"]
+  },
   "drawer": {
-    "children": []
+    "props": {
+      "isFullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#vertical"]
+  },
+
+  // GENERAL
+  "flex-layout.col#logo": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "header"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Audiophile",
+      "href": "/",
+      "url": "assets/audiophile.png",
+      "width": "80"
+    }
   }
 }

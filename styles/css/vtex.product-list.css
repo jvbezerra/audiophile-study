@@ -1,0 +1,18 @@
+.productName {
+  font-family: 'Manrope';
+  font-weight: 700;
+}
+
+.productImage, .quantitySelectorButton, .inputContainer {
+  background-color: rgba(151, 151, 151, 0.25);
+}
+
+.productImage {
+  padding: 5px;
+  border-radius: 5px;
+  aspect-ratio: 1 / 1;
+}
+
+.quantitySelectorButton {
+  color: rgba(0, 0, 0, 0.25);
+}
