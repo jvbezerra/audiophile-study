@@ -1,0 +1,33 @@
+{
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logo-desktop"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop":{
+    "props": {
+      "title": "Audiophile",
+      "href": "/",
+      "url": "assets/shared/desktop/logo.svg",
+      "width": "100"
+    }
+  },
+
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logo-mobile"
+    },
+    "children": ["logo#mobile"]
+  },
+  "logo#mobile":{
+    "props": {
+      "title": "Audiophile",
+      "href": "/",
+      "url": "assets/shared/desktop/logo.svg",
+      "width": "150"
+    }
+  }
+}

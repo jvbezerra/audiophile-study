@@ -24,7 +24,7 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo",
+      "flex-layout.col#logo-desktop",
       "flex-layout.col#menu",
       "minicart.v2"
     ]
@@ -65,29 +65,12 @@
       "blockClass": "header",
       "horizontalAlign": "center"
     },
-    "children": ["flex-layout.col#logo"]
+    "children": ["flex-layout.col#logo-mobile"]
   },
   "drawer": {
     "props": {
       "isFullWidth": true
     },
     "children": ["vtex.menu@2.x:menu#vertical"]
-  },
-
-  // GENERAL
-  "flex-layout.col#logo": {
-    "props": {
-      "verticalAlign": "middle",
-      "blockClass": "header"
-    },
-    "children": ["logo"]
-  },
-  "logo": {
-    "props": {
-      "title": "Audiophile",
-      "href": "/",
-      "url": "assets/audiophile.png",
-      "width": "80"
-    }
   }
 }

@@ -23,20 +23,19 @@
       "preventHorizontalStretch": true
     },
     "children": [
-      "logo#desktop-footer",
-      "social-media"
+      "flex-layout.col#logo-desktop",
+      "vtex.menu@2.x:menu"
     ]
   },
   "flex-layout.row#footer-2-desktop": {
     "children": [
-      "rich-text#footer",
-      "social-media"
+      "rich-text#footer"
     ]
   },
   "flex-layout.row#footer-1-mobile": {
     "children": [
-      "logo#mobile-footer",
-      "social-media"
+      "flex-layout.col#logo-mobile",
+      "vtex.menu@2.x:menu#vertical"
     ]
   },
   "flex-layout.row#footer-2-mobile": {
