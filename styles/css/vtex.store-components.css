@@ -1,0 +1,10 @@
+.logoContainer--desktop-footer-logo,
+.logoContainer--mobile-footer-logo {
+  padding: 0;
+}
+
+.flexColChild--logo-desktop-footer, 
+.logoLink--desktop-footer-logo,
+.logoContainer--desktop-footer-logo {
+  display: inline-flex;
+}

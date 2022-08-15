@@ -17,38 +17,47 @@
       "flex-layout.row#footer-2-mobile"
     ]
   },
+
   "flex-layout.row#footer-1-desktop": {
     "props": {
       "horizontalAlign": "between",
       "preventHorizontalStretch": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
+      "flex-layout.col#logo-desktop-footer",
       "vtex.menu@2.x:menu"
     ]
   },
   "flex-layout.row#footer-2-desktop": {
     "children": [
-      "rich-text#footer"
+      "rich-text#footer",
+      "social-media"
     ]
   },
+
   "flex-layout.row#footer-1-mobile": {
+    "props": {
+      "horizontalAlign": "between",
+      "preventHorizontalStretch": true
+    },
     "children": [
-      "flex-layout.col#logo-mobile",
-      "vtex.menu@2.x:menu#vertical"
+      "flex-layout.col#logo-mobile-footer",
+      "vtex.menu@2.x:menu#vertical-footer"
     ]
   },
   "flex-layout.row#footer-2-mobile": {
     "children": [
-      "rich-text#footer"
+      "rich-text#footer",
+      "social-media"
     ]
   },
-  "rich-text#footer": { 
+  
+  "rich-text#footer": {
     "props": { 
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed molestie mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vel massa vel metus placerat blandit. Phasellus mollis non risus ut sollicitudin. Sed felis neque, semper ut maximus nec, lacinia in nulla.",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "textColor": "c-on-action-secondary"
+      "textColor": "c-on-success"
     }
   }
 }

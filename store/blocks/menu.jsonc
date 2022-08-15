@@ -18,6 +18,21 @@
       "menu-item#earphones"
     ]
   },
+  // Mobile menu footer
+  "vtex.menu@2.x:menu#vertical-footer": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "category-menu-footer"
+      ]
+    },
+    "children": [
+      "menu-item#home",
+      "menu-item#headphones",
+      "menu-item#speakers",
+      "menu-item#earphones"
+    ]
+  },
 
   "menu-item#home": {
     "props": {

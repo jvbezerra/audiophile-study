@@ -29,5 +29,43 @@
       "url": "assets/shared/desktop/logo.svg",
       "width": "150"
     }
+  },
+
+  "flex-layout.col#logo-desktop-footer": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logo-desktop-footer"
+    },
+    "children": ["logo#desktop-footer"]
+  },
+  "logo#desktop-footer":{
+    "props": {
+      "title": "Audiophile",
+      "href": "/",
+      "url": "assets/shared/desktop/logo.svg",
+      "width": "100",
+      "blockClass": [
+        "desktop-footer-logo"
+      ]
+    }
+  },
+
+  "flex-layout.col#logo-mobile-footer": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logo-mobile-footer"
+    },
+    "children": ["logo#mobile-footer"]
+  },
+  "logo#mobile-footer":{
+    "props": {
+      "title": "Audiophile",
+      "href": "/",
+      "url": "assets/shared/desktop/logo.svg",
+      "width": "100",
+      "blockClass": [
+        "mobile-footer-logo"
+      ]
+    }
   }
 }

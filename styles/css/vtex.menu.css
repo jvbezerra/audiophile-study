@@ -5,3 +5,23 @@
   letter-spacing: 2px;
   font-weight: 400;
 }
+
+.menuContainerNav--category-menu-footer .styledLinkContainer {
+  margin-left: 0;
+}
+
+.menuContainer--category-menu-footer .menuItem:last-child .styledLinkContainer {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 639px) {
+  .menuContainer--category-menu-footer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .menuContainer--category-menu-footer {
+    margin-top: 16px;
+  }
+}

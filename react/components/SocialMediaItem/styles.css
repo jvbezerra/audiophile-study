@@ -1,0 +1,8 @@
+.socialMediaItemWrapper:not(:first-of-type) {
+  margin-top: 16px;
+}
+
+
+.socialMediaItemWrapper img {
+  width: 100px;
+}
